@@ -29,6 +29,10 @@ public class MainTest {
 			System.out.println("insert coin");
 			System.out.println("1. Y 2. N");
 			int i = sc.nextInt();
+			if (student1.money <= 0) {
+				System.out.println("용돈이 떨어졌습니다.");
+				break;
+			} 
 			if (i == 1) {
 				int a = (int) (Math.random() * 12);
 				prizes[a].showPrize();
@@ -44,7 +48,7 @@ public class MainTest {
 				System.out.println("잘못입력하셨습니다.");
 				continue;
 			}
-
+			
 		}
 
 	} // end main

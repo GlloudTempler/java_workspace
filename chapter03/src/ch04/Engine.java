@@ -12,8 +12,6 @@ public class Engine {
 	public int getPrice() {
 		return price;
 	}
-
-
 	
 	public Engine(String name, int price) {
 		this.name = name;

@@ -4,7 +4,7 @@ public class Student {
 	
 	String name;
 	int money;
-	int
+	int earn;
 	
 	public Student (String name, int money) {
 		this.name = name;
@@ -12,11 +12,12 @@ public class Student {
 	}
 	
 	public void insertCoin() {
-		this.money -= 500;
+		this.money -= 1_000;
 	}
 	
 	public void earn(int price) {
-		System.out.println("획득한 상품의 가치는 " + price + "이다.");
+		earn += price;
+		System.out.println("획득한 상품의 가치는 " + earn + "이다.");
 	}
 	
 	public void showInfo() {
