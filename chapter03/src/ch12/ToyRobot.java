@@ -14,7 +14,7 @@ public class ToyRobot implements Remotecontroller, SoundEffect{
 	
 	@Override
 	public void turnOff() {
-		System.out.println("장남간 다운");
+		System.out.println("장난감 다운");
 	}	
 	
 	public void notification() {
